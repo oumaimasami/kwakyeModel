@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#AverageTrajectorySpeed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#AverageTrajectorySpeed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajFactTable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#CalendarSeason -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#CalendarSeason">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TemporalInstanceDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventActivityName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventActivityName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventEnvironmentCharac -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventEnvironmentCharac">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventEnvironmentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventEnvironmentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventItemGoal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventItemGoal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventItemName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventItemName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#GeographicSpaceDimension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#GeographicSpaceDimension"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#SocialInteractionDimension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#SocialInteractionDimension"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TemporalInstanceDimension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TemporalInstanceDimension"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajFactTable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajFactTable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajModelBehaviourMovementVelocity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajModelBehaviourMovementVelocity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajSegmentSemanticEndPoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajSegmentSemanticEndPoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajSegmentSemanticStartPoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajSegmentSemanticStartPoint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryModelFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryModelFeature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryModelName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryModelName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
