@@ -5,8 +5,47 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:kwakyeModel="https://github.com/oumaimasami/kwakyeModel#">
+    <owl:Ontology rdf:about="https://github.com/oumaimasami/kwakyeModel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#CalendarSeason -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#CalendarSeason">
+        <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#CalendarSeason"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#EventItemGoal -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#EventItemGoal">
+        <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemGoal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#EventItemName -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#EventItemName">
+        <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemName"/>
+    </owl:ObjectProperty>
     
 
 
@@ -21,135 +60,477 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#AverageTrajectorySpeed -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#AverageTrajectorySpeed -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#AverageTrajectorySpeed">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajFactTable"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#AverageTrajectorySpeed">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTable"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#CalendarSeason -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#CalendarSeason -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#CalendarSeason">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TemporalInstanceDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#CalendarSeason">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#TemporalInstanceDimension"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventActivityName -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#EventActivityName -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventActivityName">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#EventActivityName">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventsRepresentationDimension"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventEnvironmentCharac -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#EventEnvironmentCharac -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventEnvironmentCharac">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#EventEnvironmentCharac">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventsRepresentationDimension"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventEnvironmentType -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#EventEnvironmentType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventEnvironmentType">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#EventEnvironmentType">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventsRepresentationDimension"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventItemGoal -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#EventItemGoal -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventItemGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#EventItemGoal">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventsRepresentationDimension"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventItemName -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#EventItemName -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventItemName">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#EventItemName">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventsRepresentationDimension"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#EventsRepresentationDimension -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#EventsRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#EventsRepresentationDimension"/>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#GeographicSpaceDimension -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#GeographicSpaceDimension -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#GeographicSpaceDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#GeographicSpaceDimension"/>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#SocialInteractionDimension -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#SocialInteractionDimension -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#SocialInteractionDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#SocialInteractionDimension"/>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TemporalInstanceDimension -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#TemporalInstanceDimension -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TemporalInstanceDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TemporalInstanceDimension"/>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajFactTable -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajFactTable -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajFactTable"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajFactTable"/>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajModelBehaviourMovementVelocity -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajFactTableID -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajModelBehaviourMovementVelocity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTable"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajSegmentSemanticEndPoint -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajModelBehaviourMovementVelocity -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajSegmentSemanticEndPoint">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajModelBehaviourMovementVelocity">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryRepresentationDimension"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajSegmentSemanticStartPoint -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajSegmentSemanticStartPoint">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryRepresentationDimension"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryModelFeature -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryModelFeature">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryRepresentationDimension"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryModelName -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajectoryModelFeature -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryModelName">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajectoryModelFeature">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryRepresentationDimension"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajectoryModelName -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/6/KwakyeModel#TrajectoryRepresentationDimension"/>
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajectoryModelName">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajectoryRepresentationDimension -->
+
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajectoryRepresentationDimension"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#carnival -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#carnival">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#exhibition -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#exhibition">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#festival -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#festival">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#for_culture -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#for_culture">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemGoal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#for_fun -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#for_fun">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemGoal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#summer -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#summer">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#CalendarSeason"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist1 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist1">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#festival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist10 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist10">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#carnival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist11 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist11">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#exhibition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist12 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist12">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#festival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist13 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist13">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#carnival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist14 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist14">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#festival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist15 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist15">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#festival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist16 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist16">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#festival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist17 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist17">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#carnival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist18 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist18">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#carnival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist19 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist19">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#exhibition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist2">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#exhibition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist20 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist20">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#festival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist21 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist21">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#festival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist22 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist22">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#festival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist23 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist23">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#carnival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist24 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist24">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#carnival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist25 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist25">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#exhibition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist3 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist3">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#exhibition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist4 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist4">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#exhibition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist5 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist5">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#exhibition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist6 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist6">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_fun"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#exhibition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist7 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist7">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#carnival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist8 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist8">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#carnival"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#tourist9 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#tourist9">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:CalendarSeason rdf:resource="https://github.com/oumaimasami/kwakyeModel#summer"/>
+        <kwakyeModel:EventItemGoal rdf:resource="https://github.com/oumaimasami/kwakyeModel#for_culture"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#carnival"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
