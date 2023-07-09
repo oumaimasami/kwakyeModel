@@ -31,38 +31,11 @@
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#CalendarSeason -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#EventActivityName -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#CalendarSeason">
+    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#EventActivityName">
         <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#CalendarSeason"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#EventEnviromentCharac -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#EventEnviromentCharac">
-        <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventEnvironmentCharac"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#EventEnviromentType -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#EventEnviromentType">
-        <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventEnvironmentType"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#EventItemGoal -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#EventItemGoal">
-        <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemGoal"/>
+        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventActivityName"/>
     </owl:ObjectProperty>
     
 
@@ -76,29 +49,29 @@
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#TrajModelBehaviourmovementVelocity -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajModelBehaviourmovementVelocity">
-        <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajModelBehaviourMovementVelocity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#TrajModelFeature -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajModelFeature">
-        <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryModelFeature"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/oumaimasami/kwakyeModel#TrajModelName -->
 
     <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajModelName">
         <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
         <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryModelName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint">
+        <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint">
+        <rdfs:domain rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <rdfs:range rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint"/>
     </owl:ObjectProperty>
     
 
@@ -216,6 +189,22 @@
     
 
 
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint -->
+
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryRepresentationDimension"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint -->
+
+    <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint">
+        <rdfs:subClassOf rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryRepresentationDimension"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/oumaimasami/kwakyeModel#TrajectoryModelFeature -->
 
     <owl:Class rdf:about="https://github.com/oumaimasami/kwakyeModel#TrajectoryModelFeature">
@@ -249,270 +238,178 @@
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#ArcticTern -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#Accidents -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#ArcticTern">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#Accidents">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventActivityName"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#ArcticTern2 -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#Bridge_Repair -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#ArcticTern2">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#ArcticTern3 -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#ArcticTern3">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#39km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#ArcticTern4 -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#ArcticTern4">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#ArcticTern5 -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#ArcticTern5">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#32km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#ArcticWarbler -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#ArcticWarbler">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#ArcticWarbler2 -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#ArcticWarbler2">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#ArcticWarbler3 -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#ArcticWarbler3">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#BarnSwallows -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#BarnSwallows">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#BarnSwallows2 -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#BarnSwallows2">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#BarnSwallows3 -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#BarnSwallows3">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#BartailedGodwit -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#BartailedGodwit">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#BartailedGodwit2 -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#BartailedGodwit2">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#BartailedGodwit3 -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#BartailedGodwit3">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#snow_effects"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#39km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#BartailedGodwit4 -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#BartailedGodwit4">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#BirdMigration -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#BirdMigration">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryModelName"/>
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#Bridge_Repair">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemName"/>
     </owl:NamedIndividual>
     
 
 
     <!-- https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryModelFeature"/>
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#LondonTraffic -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#LondonTraffic">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Accidents"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Bridge_Repair"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S2"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#EuropeanRobin -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#LondonTraffic2 -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#EuropeanRobin">
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#LondonTraffic2">
         <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
         <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Road_Closures"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Sharp_Curves"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S2"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#EuropeanRobin2 -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#LondonTraffic3 -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#EuropeanRobin2">
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#LondonTraffic3">
         <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
         <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Road_Construction"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Street_Carnival"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S2"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#EuropeanRobin3 -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#LondonTraffic4 -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#EuropeanRobin3">
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#LondonTraffic4">
         <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
         <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Accidents"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Bridge_Repair"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S2"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#NewYorkTraffic -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#NewYorkTraffic">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#32km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Accidents"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Bridge_Repair"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S4"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#NewYorkTraffic2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#NewYorkTraffic2">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#32km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Road_Closures"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Sharp_Curves"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S4"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#NewYorkTraffic3 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#NewYorkTraffic3">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#32km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Road_Closures"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Street_Carnival"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S4"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#NewYorkTraffic4 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#NewYorkTraffic4">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Accidents"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Bridge_Repair"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S4"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#ParisTraffic -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#ParisTraffic">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Road_Construction"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Street_Carnival"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S6"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#ParisTraffic2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#ParisTraffic2">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Accidents"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Bridge_Repair"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S6"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#ParisTraffic3 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#ParisTraffic3">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Road_Construction"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Sharp_Curves"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S6"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S5"/>
     </owl:NamedIndividual>
     
 
@@ -525,86 +422,242 @@
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#RubythroatedHummingBird -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#Road_Closures -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#RubythroatedHummingBird">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#39km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#Road_Closures">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventActivityName"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#RubythroatedHummingBird2 -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#Road_Construction -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#RubythroatedHummingBird2">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#Road_Construction">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventActivityName"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#RubythroatedHummingBird3 -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#S1 -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#RubythroatedHummingBird3">
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#S1">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#S10 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#S10">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#S2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#S2">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#S3 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#S3">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#S4 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#S4">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#S5 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#S5">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#S6 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#S6">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#S7 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#S7">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#S8 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#S8">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticEndPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#S9 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#S9">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajSegmentSemanticStartPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#Sharp_Curves -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#Sharp_Curves">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#SingaporeTraffic -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#SingaporeTraffic">
         <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
         <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#32km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Road_Construction"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Street_Carnival"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S8"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S7"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#SandhillCrane -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#SingaporeTraffic2 -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#SandhillCrane">
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#SingaporeTraffic2">
         <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
         <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Road_Construction"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Street_Carnival"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S8"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S7"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#SandhillCrane2 -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#SingaporeTraffic3 -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#SandhillCrane2">
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#SingaporeTraffic3">
         <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
         <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#39km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Road_Construction"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Street_Carnival"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S8"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S7"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/oumaimasami/kwakyeModel#SandhillCrane3 -->
+    <!-- https://github.com/oumaimasami/kwakyeModel#SingaporeTraffic4 -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#SandhillCrane3">
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#SingaporeTraffic4">
         <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
-        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:EventEnviromentCharac rdf:resource="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern"/>
-        <kwakyeModel:EventEnviromentType rdf:resource="https://github.com/oumaimasami/kwakyeModel#Rain_preciption"/>
-        <kwakyeModel:TrajModelBehaviourmovementVelocity rdf:resource="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
-        <kwakyeModel:TrajModelFeature rdf:resource="https://github.com/oumaimasami/kwakyeModel#Continuous_Time_Tracking"/>
-        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#BirdMigration"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Road_Closures"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Street_Carnival"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S8"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#Steep_Slope -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#Steep_Slope">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#Street_Carnival -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#Street_Carnival">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#TokyoTraffic -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#TokyoTraffic">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#32km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Accidents"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Bridge_Repair"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S10"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#TokyoTraffic2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#TokyoTraffic2">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#32km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Accidents"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Bridge_Repair"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S10"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#TokyoTraffic3 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#TokyoTraffic3">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Accidents"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Bridge_Repair"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S10"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#TokyoTraffic4 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#TokyoTraffic4">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajFactTableID"/>
+        <kwakyeModel:AverageTrajSpeed rdf:resource="https://github.com/oumaimasami/kwakyeModel#40km_per_hour"/>
+        <kwakyeModel:EventActivityName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Accidents"/>
+        <kwakyeModel:EventItemName rdf:resource="https://github.com/oumaimasami/kwakyeModel#Bridge_Repair"/>
+        <kwakyeModel:TrajModelName rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrafficManagement"/>
+        <kwakyeModel:TrajSegmentSemanticEndPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S10"/>
+        <kwakyeModel:TrajSegmentSemanticStartPoint rdf:resource="https://github.com/oumaimasami/kwakyeModel#S9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/oumaimasami/kwakyeModel#TrafficManagement -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#TrafficManagement">
+        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajectoryModelName"/>
     </owl:NamedIndividual>
     
 
@@ -613,46 +666,6 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#annual_migration_pattern">
         <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventEnvironmentCharac"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#carnival -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#carnival">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemName"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#exhibition -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#exhibition">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemName"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#festival -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#festival">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemName"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#for_culture -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#for_culture">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemGoal"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/oumaimasami/kwakyeModel#for_fun -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#for_fun">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#EventItemGoal"/>
     </owl:NamedIndividual>
     
 
@@ -683,9 +696,7 @@
 
     <!-- https://github.com/oumaimasami/kwakyeModel#23km_per_hour -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#23km_per_hour">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajModelBehaviourMovementVelocity"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#23km_per_hour"/>
     
 
 
@@ -699,9 +710,7 @@
 
     <!-- https://github.com/oumaimasami/kwakyeModel#39km_per_hour -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#39km_per_hour">
-        <rdf:type rdf:resource="https://github.com/oumaimasami/kwakyeModel#TrajModelBehaviourMovementVelocity"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://github.com/oumaimasami/kwakyeModel#39km_per_hour"/>
     
 
 
